@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>About | Yuki&#39;s Gateway</title>
+    <meta name="author" content="浅羽雪晴YukiNeko" />
+    <meta name="description" content="maimai Deluxe | Rhythm Games | Tech Enthusiast" />
+    <meta name="keywords" content="浅羽雪晴,yukineko,yukineko2233" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+<script src="https://s4.zstatic.net/ajax/libs/twikoo/1.6.31/twikoo.all.min.js"></script>
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>YUKI&#39;S GATEWAY</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;主页</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;归档</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于</span>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://maimai.yukineko2233.top/">
+            <i class="fa-solid fa-gamepad fa-fw"></i>
+            <span>&ensp;舞萌猜歌</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;YUKI&#39;S GATEWAY</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">主页</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">归档</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于</div>
+                    </div>
+                </a>
+                
+                <a target="_blank" rel="noopener" href="https://maimai.yukineko2233.top/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-gamepad fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">舞萌猜歌</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>About</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/4/26
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="你好，这里是-浅羽雪晴YukiNeko"><a href="#你好，这里是-浅羽雪晴YukiNeko" class="headerlink" title="你好，这里是 浅羽雪晴YukiNeko"></a>你好，这里是 浅羽雪晴YukiNeko</h1><hr>
+<blockquote>
+<p>You never watch it far and watch it far away<br>It seems like to my fingers as I heard you say</p>
+</blockquote>
+<p>maimai Delxue | Rhythm Games | Tech Enthusiast<br>You can call me <strong>雪晴</strong> &#x2F; <strong>yuki</strong><br>Gender: <strong>Neko</strong></p>
+<h2 id="一般路过-maimai-Player"><a href="#一般路过-maimai-Player" class="headerlink" title="一般路过 maimai Player"></a>一般路过 maimai Player</h2><p>Rating: 15416</p>
+<p>Play Count: 2560</p>
+<h2 id="关于-Telegram-Channel-x2F-Group"><a href="#关于-Telegram-Channel-x2F-Group" class="headerlink" title="关于 Telegram Channel&#x2F;Group"></a>关于 Telegram Channel&#x2F;Group</h2><p><a target="_blank" rel="noopener" href="https://t.me/+_fEIWSEbteNlMmVl">Channel</a></p>
+<p><a target="_blank" rel="noopener" href="https://t.me/+s8Txb9dpP8VlNzQ1">Group</a> (Linked with Channel)</p>
+<p><strong>眼熟 &#x3D; 通过</strong></p>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a target="_blank" rel="noopener" href="https://amane.icu/">Amane Tanikaze</a></p>
+<p><a target="_blank" rel="noopener" href="https://starseacommunity.store/">Francis Gray</a></p>
+<p><a target="_blank" rel="noopener" href="https://angforever.top/">昂的深林小屋</a></p>
+<p><a target="_blank" rel="noopener" href="https://nyac.at/">凌莞喵～</a></p>
+<h2 id="找到我"><a href="#找到我" class="headerlink" title="找到我"></a>找到我</h2><table>
+<thead>
+<tr>
+<th align="center">平台</th>
+<th align="left">链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Telegram</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://t.me/yukineko_gate">Yuki’s Gateway</a></td>
+</tr>
+<tr>
+<td align="center">哔哩哔哩</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://space.bilibili.com/91295942">浅羽雪晴YukiNeko</a></td>
+</tr>
+<tr>
+<td align="center">X&#x2F;Twitter</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://x.com/yukineko2233">@yukineko2233</a></td>
+</tr>
+<tr>
+<td align="center">Steam</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/yukineko2233/">舞萌DX2077</a></td>
+</tr>
+<tr>
+<td align="center">GitHub</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://github.com/yukineko2233">YukiNeko</a></td>
+</tr>
+<tr>
+<td align="center">爱发电</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://afdian.com/a/yukineko2233">YukiNeko</a></td>
+</tr>
+</tbody></table>
+<p><img src="https://yukineko2233.top/images/avatar.jpg" alt="avatar"></p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    <div id="comment">
+        <div id="twikoo-container"></div>
+    </div>
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2025 - 2025 Yuki&#39;s Gateway
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;浅羽雪晴YukiNeko
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+        <div>
+            备案号：
+            
+                
+                    
+                        <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">鲁ICP备2025161459号</a>
+                    
+                    
+                        |
+                    
+                
+                    
+                        <a target="_blank" rel="noopener" href="https://beian.mps.gov.cn/#/query/webSearch?code=">网安备案占位符</a>
+                    
+                    
+                        |
+                    
+                
+                    
+                        <a target="_blank" rel="noopener" href="https://icp.gov.moe/?keyword=20252230">萌ICP备20252230号</a>
+                    
+                    
+                
+            
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+
+<script>
+    twikoo.init({
+        el: "#twikoo-container",
+        envId: "https://twikoo.yukineko2233.top",
+        region: "",
+        path: location.pathname,
+        lang: "",
+    })
+</script>
+
+
+    
+</body>
+</html>
